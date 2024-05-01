@@ -157,3 +157,47 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// JavaScript for Guide Buttons
+
+document.addEventListener("DOMContentLoaded", function () {
+  const prevButton = document.querySelector(".prev-button");
+  const nextButton = document.querySelector(".next-button");
+  const testimonialsList = document.querySelector(".testimonials-list");
+  const testimonialsItems = document.querySelectorAll(".testimonials-item");
+
+  let currentIndex = 0;
+
+  // Function to show the next testimonial
+  function showNextTestimonial() {
+    if (currentIndex < testimonialsItems.length - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    scrollToTestimonial(currentIndex);
+  }
+
+  // Function to show the previous testimonial
+  function showPrevTestimonial() {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = testimonialsItems.length - 1;
+    }
+    scrollToTestimonial(currentIndex);
+  }
+
+  // Function to scroll to the selected testimonial
+  function scrollToTestimonial(index) {
+    testimonialsItems[index].scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  }
+
+  // Event listeners for guide buttons
+  prevButton.addEventListener("click", showPrevTestimonial);
+  nextButton.addEventListener("click", showNextTestimonial);
+});
