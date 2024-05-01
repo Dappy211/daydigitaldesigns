@@ -720,6 +720,40 @@ main {
   line-height: 1.6;
 }
 
+/* Previous and Next buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.prev-button,
+.next-button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prev-button:hover,
+.next-button:hover {
+ color: var(--light-gray-70); 
+color: var(--orange-yellow-crayola); 
+}
+
+.prev-button {
+  margin-right: 10px; /* Adjust spacing between buttons */
+}
+
+.next-button {
+  margin-left: 10px; /* Adjust spacing between buttons */
+}
+
+
 
 /**
  * #clients 
