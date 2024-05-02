@@ -753,6 +753,26 @@ color: var(--orange-yellow-crayola);
   margin-left: 10px; /* Adjust spacing between buttons */
 }
 
+.testimonials-full-text {
+  display: none;
+}
+/* Style for the "Read More" button */
+.read-more-btn {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.read-more-btn:hover {
+  color: var(--light-gray-70); 
+color: var(--orange-yellow-crayola); 
+}
 
 
 /**
