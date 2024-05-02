@@ -396,6 +396,25 @@ main {
   transition: var(--transition-2);
 }
 
+/* Hide social media links by default */
+.social-list {
+  display: none;
+}
+
+/* Show social media links when the button is clicked */
+.show-social .social-list {
+  display: block;
+}
+.toggle-social-btn {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .sidebar.active .sidebar-info_more {
   opacity: 1;
   visibility: visible;
