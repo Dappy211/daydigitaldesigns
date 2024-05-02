@@ -197,6 +197,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  function toggleText(button) {
+  var content = button.parentElement;
+  var fullText = content.querySelector('.testimonials-full-text');
+
+  fullText.classList.toggle('show');
+
+  if (fullText.classList.contains('show')) {
+      button.textContent = "Read Less";
+  } else {
+      button.textContent = "Read More";
+  }
+}
+
   // Event listeners for guide buttons
   prevButton.addEventListener("click", showPrevTestimonial);
   nextButton.addEventListener("click", showNextTestimonial);
