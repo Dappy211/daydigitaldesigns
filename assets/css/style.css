@@ -763,7 +763,7 @@ color: var(--orange-yellow-crayola);
   color: #fff;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 13px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
