@@ -210,6 +210,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 }
 
+  document.addEventListener('DOMContentLoaded', function() {
+  const toggleSocialBtn = document.getElementById('toggle-social');
+  const socialList = document.querySelector('.social-list');
+
+  toggleSocialBtn.addEventListener('click', function() {
+    socialList.classList.toggle('show-social');
+  });
+});
+
+
   // Event listeners for guide buttons
   prevButton.addEventListener("click", showPrevTestimonial);
   nextButton.addEventListener("click", showNextTestimonial);
