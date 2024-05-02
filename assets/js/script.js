@@ -224,3 +224,12 @@ document.addEventListener("DOMContentLoaded", function () {
   prevButton.addEventListener("click", showPrevTestimonial);
   nextButton.addEventListener("click", showNextTestimonial);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const toggleButton = document.getElementById("toggle-social");
+  const socialList = document.querySelector(".social-list");
+
+  toggleButton.addEventListener("click", function() {
+    socialList.classList.toggle("show-social");
+  });
+});
